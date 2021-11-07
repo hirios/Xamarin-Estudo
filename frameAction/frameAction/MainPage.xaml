@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:controls="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms"  
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="frameAction.MainPage"
+             BackgroundColor="#e4e4e4"
+             NavigationPage.HasNavigationBar="false"
+             >
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#989898" HeightRequest="30">
+                <Label VerticalOptions="Center" FontAttributes="Bold" FontSize="22" Text="GRAVAÇÃO E LEITURA"></Label>
+            </Frame>
+            <Entry x:Name="ENTRADA" Placeholder="Digite aqui para salvar"></Entry>
+            <StackLayout Orientation="Horizontal">
+                <Button Text="GRAVAR" Clicked="GRAVAR"></Button>
+                <Button Text="LER" Clicked="LEITURA"></Button>
+            </StackLayout>
+            <Frame BackgroundColor="#989898" HeightRequest="30"></Frame>
+            <Label x:Name="SAIDA" Text="Aqui é o texto!" TextColor="Black" FontSize="22"></Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
