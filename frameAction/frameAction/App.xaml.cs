@@ -9,7 +9,7 @@ namespace frameAction
         public App()
         {
             InitializeComponent();
-            MainPage = new NavigationPage(new MainPage());
+            MainPage = new NavigationPage(new MainPage()) { BarBackgroundColor = Color.FromHex("#2296F3") };
         }
 
         protected override void OnStart()

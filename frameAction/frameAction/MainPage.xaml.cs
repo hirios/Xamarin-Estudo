@@ -17,7 +17,6 @@ namespace frameAction
 
         public MainPage()
         {
-            
             InitializeComponent();
         }
 
@@ -31,7 +30,6 @@ namespace frameAction
             string STR = ENTRADA.Text;       
             File.WriteAllText(fileName, STR);
             NextPage();
-
         }
 
         public void LEITURA(object sender, EventArgs e)
@@ -41,6 +39,8 @@ namespace frameAction
             if (Exist)
             {
                 SAIDA.Text = File.ReadAllText(fileName);
+                DependencyService.Get<IMessage>().ShortAlert("LIDO COM SUCESSO");
+                //DisplayAlert("ALERTA", "Lido com sucesso", "Ok");
             }
         }
 

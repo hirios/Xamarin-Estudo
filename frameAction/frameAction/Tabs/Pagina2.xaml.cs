@@ -10,11 +10,13 @@ using Xamarin.Forms.Xaml;
 namespace frameAction
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Page1 : TabbedPage
+    public partial class Pagina2 : ContentPage
     {
-        public Page1()
+        public Pagina2()
         {
             InitializeComponent();
+            BindingContext = new modelo();
         }
+
     }
 }
