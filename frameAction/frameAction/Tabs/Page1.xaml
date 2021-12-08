@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="frameAction.Page1"
+             xmlns:nav="clr-namespace:frameAction"
+             NavigationPage.HasNavigationBar="True"
+             BarBackgroundColor="Black"
+             Title="Pagina 0"
+            >
+
+    <ContentPage Title="Primeira">
+        <ContentPage.ToolbarItems>
+            <ToolbarItem IconImageSource="https://cdn-icons.flaticon.com/png/512/5959/premium/5959402.png?token=exp=1636511134~hmac=fe78fc8f865f09395f359f73600a0f5b" ></ToolbarItem>
+            <ToolbarItem IconImageSource="https://cdn-icons.flaticon.com/png/512/5959/premium/5959379.png?token=exp=1636511161~hmac=7d12a9f7e26c906b519da8608f535f20"></ToolbarItem>
+            <ToolbarItem IconImageSource="https://cdn-icons.flaticon.com/png/512/5959/premium/5959122.png?token=exp=1636511134~hmac=4bbe28beab4d9d6e778e95890e924ddb"></ToolbarItem>
+        </ContentPage.ToolbarItems>
+
+        <StackLayout>
+            <Label Text="Essa é a primeiraa!"
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage>
+    <nav:Pagina2></nav:Pagina2>
+    <nav:Pagina3></nav:Pagina3>
+ 
+</TabbedPage>

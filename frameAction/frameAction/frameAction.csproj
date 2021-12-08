@@ -11,18 +11,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Xamarin.CommunityToolkit.Markup" Version="1.2.0" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Page1.xaml.cs">
+    <Compile Update="Tabs\Page1.xaml.cs">
       <DependentUpon>Page1.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Page1.xaml">
+    <EmbeddedResource Update="Tabs\Page1.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Tabs\Pagina2.xaml">
